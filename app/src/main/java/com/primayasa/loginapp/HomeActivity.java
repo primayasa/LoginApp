@@ -21,7 +21,6 @@ public class HomeActivity extends AppCompatActivity {
         TextView loginUsernameTV = findViewById(R.id.loginUsernameTV);
         sharedPreferences = getSharedPreferences("user_details", MODE_PRIVATE);
         loginUsernameTV.setText(sharedPreferences.getString("username", ""));
-        //        Log.d("Monitoring Program", sharedPreferences.getString("username", ""));
     }
 
     public void logoutAccount(View view) {
